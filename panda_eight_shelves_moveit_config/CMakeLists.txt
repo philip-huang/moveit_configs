@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.10)
+project(panda_eight_shelves_moveit_config)
+
+find_package(catkin REQUIRED)
+
+catkin_package()
+
+install(DIRECTORY launch DESTINATION share/${PROJECT_NAME}
+  PATTERN "setup_assistant.launch" EXCLUDE)
+install(DIRECTORY config DESTINATION share/${PROJECT_NAME})
+install(FILES .setup_assistant DESTINATION share/${PROJECT_NAME})

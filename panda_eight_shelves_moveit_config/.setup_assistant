@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: moveit_resources_panda_eight_description
+    relative_path: urdf/panda_eight_shelves.urdf
+  srdf:
+    relative_path: config/panda.srdf
+  package_settings:
+    author_name: Yorai Shaoul
+    author_email: yorai@cmu.edu
+    generated_timestamp: 1707265759
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity

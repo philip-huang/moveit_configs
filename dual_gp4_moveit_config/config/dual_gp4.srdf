@@ -112,6 +112,22 @@
         <joint name="right_arm_joint_5" value="-1.04"/>
         <joint name="right_arm_joint_6" value="0"/>
     </group_state>
+    <group_state name="left_push_up" group="dual_arms">
+        <joint name="left_arm_fts_tool" value="0"/>
+        <joint name="left_arm_joint_1" value="0"/>
+        <joint name="left_arm_joint_2" value="-0.4098"/>
+        <joint name="left_arm_joint_3" value="0"/>
+        <joint name="left_arm_joint_4" value="0"/>
+        <joint name="left_arm_joint_5" value="-0.9743"/>
+        <joint name="left_arm_joint_6" value="0"/>
+        <joint name="right_arm_fts_tool" value="0"/>
+        <joint name="right_arm_joint_1" value="0"/>
+        <joint name="right_arm_joint_2" value="0.449"/>
+        <joint name="right_arm_joint_3" value="0"/>
+        <joint name="right_arm_joint_4" value="0"/>
+        <joint name="right_arm_joint_5" value="0.4189"/>
+        <joint name="right_arm_joint_6" value="0"/>
+    </group_state>
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
     <disable_collisions link1="left_arm_base_link" link2="left_arm_link_1" reason="Adjacent"/>
     <disable_collisions link1="left_arm_base_link" link2="left_arm_link_camera_origin" reason="Never"/>

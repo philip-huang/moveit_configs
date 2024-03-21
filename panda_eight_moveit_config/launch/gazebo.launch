@@ -13,7 +13,7 @@
   </include>
 
   <!-- Set the robot urdf on the parameter server -->
-  <param name="robot_description" command="xacro  '/home/yoraish/code/mramp/mramp_ws/src/panda_eight_description/urdf/panda_eight.urdf.xacro'" />
+  <param name="robot_description" command="xacro  '$(find panda_eight_moveit_config)/../panda_eight_description/urdf/panda_eight.urdf.xacro'" />
 
   <!-- Unpause the simulation after loading the robot model -->
   <arg name="unpause" value="$(eval '' if arg('paused') else '-unpause')" />

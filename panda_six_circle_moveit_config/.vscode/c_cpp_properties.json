@@ -1,0 +1,25 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/yoraish/code/mramp/mramp_ws/install/mramp/include/**",
+        "/home/yoraish/code/mramp/mramp_ws/install/manipulation_planning/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/yoraish/code/mramp/mramp_ws/src/manipulation_planning/include/**",
+        "/home/yoraish/code/mramp/mramp_ws/src/moveit_scene_builder/include/**",
+        "/home/yoraish/code/mramp/mramp_ws/src/mramp/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

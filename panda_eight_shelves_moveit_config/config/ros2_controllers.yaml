@@ -1,0 +1,76 @@
+# This config file is used by ros2_control
+controller_manager:
+  ros__parameters:
+    update_rate: 100  # Hz
+
+    panda_multi_arm_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+panda_multi_arm_controller:
+  ros__parameters:
+    joints:
+      - panda0_joint1
+      - panda0_joint2
+      - panda0_joint3
+      - panda0_joint4
+      - panda0_joint5
+      - panda0_joint6
+      - panda0_joint7
+      - panda1_joint1
+      - panda1_joint2
+      - panda1_joint3
+      - panda1_joint4
+      - panda1_joint5
+      - panda1_joint6
+      - panda1_joint7
+      - panda2_joint1
+      - panda2_joint2
+      - panda2_joint3
+      - panda2_joint4
+      - panda2_joint5
+      - panda2_joint6
+      - panda2_joint7
+      - panda3_joint1
+      - panda3_joint2
+      - panda3_joint3
+      - panda3_joint4
+      - panda3_joint5
+      - panda3_joint6
+      - panda3_joint7
+      - panda4_joint1
+      - panda4_joint2
+      - panda4_joint3
+      - panda4_joint4
+      - panda4_joint5
+      - panda4_joint6
+      - panda4_joint7
+      - panda5_joint1
+      - panda5_joint2
+      - panda5_joint3
+      - panda5_joint4
+      - panda5_joint5
+      - panda5_joint6
+      - panda5_joint7
+      - panda6_joint1
+      - panda6_joint2
+      - panda6_joint3
+      - panda6_joint4
+      - panda6_joint5
+      - panda6_joint6
+      - panda6_joint7
+      - panda7_joint1
+      - panda7_joint2
+      - panda7_joint3
+      - panda7_joint4
+      - panda7_joint5
+      - panda7_joint6
+      - panda7_joint7
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
