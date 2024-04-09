@@ -70,14 +70,14 @@
         <joint name="left_arm_joint_2" value="0"/>
         <joint name="left_arm_joint_3" value="0"/>
         <joint name="left_arm_joint_4" value="0"/>
-        <joint name="left_arm_joint_5" value="-1.2058"/>
+        <joint name="left_arm_joint_5" value="-1.57"/>
         <joint name="left_arm_joint_6" value="0"/>
         <joint name="right_arm_fts_tool" value="0"/>
         <joint name="right_arm_joint_1" value="0"/>
-        <joint name="right_arm_joint_2" value="-0.006"/>
+        <joint name="right_arm_joint_2" value="0"/>
         <joint name="right_arm_joint_3" value="0"/>
         <joint name="right_arm_joint_4" value="0"/>
-        <joint name="right_arm_joint_5" value="-1.3328"/>
+        <joint name="right_arm_joint_5" value="-1.57"/>
         <joint name="right_arm_joint_6" value="0"/>
     </group_state>
     <group_state name="left_push" group="dual_arms">
@@ -144,7 +144,135 @@
         <joint name="right_arm_joint_5" value="-0.9743"/>
         <joint name="right_arm_joint_6" value="0"/>
     </group_state>
-    <group_state name="left_push_down" group="dual_arms">
+    <group_state name="left_rotated" group="dual_arms">
+        <joint name="left_arm_fts_tool" value="0"/>
+        <joint name="left_arm_joint_1" value="-1"/>
+        <joint name="left_arm_joint_2" value="0"/>
+        <joint name="left_arm_joint_3" value="0"/>
+        <joint name="left_arm_joint_4" value="0"/>
+        <joint name="left_arm_joint_5" value="0"/>
+        <joint name="left_arm_joint_6" value="0"/>
+        <joint name="right_arm_fts_tool" value="0"/>
+        <joint name="right_arm_joint_1" value="1"/>
+        <joint name="right_arm_joint_2" value="0"/>
+        <joint name="right_arm_joint_3" value="0"/>
+        <joint name="right_arm_joint_4" value="0"/>
+        <joint name="right_arm_joint_5" value="-1.3328"/>
+        <joint name="right_arm_joint_6" value="0"/>
+    </group_state>
+    <group_state name="right_rotated" group="dual_arms">
+        <joint name="left_arm_fts_tool" value="0"/>
+        <joint name="left_arm_joint_1" value="1"/>
+        <joint name="left_arm_joint_2" value="0"/>
+        <joint name="left_arm_joint_3" value="0"/>
+        <joint name="left_arm_joint_4" value="0"/>
+        <joint name="left_arm_joint_5" value="-1.2058"/>
+        <joint name="left_arm_joint_6" value="0"/>
+        <joint name="right_arm_fts_tool" value="0"/>
+        <joint name="right_arm_joint_1" value="-1"/>
+        <joint name="right_arm_joint_2" value="0"/>
+        <joint name="right_arm_joint_3" value="0"/>
+        <joint name="right_arm_joint_4" value="0"/>
+        <joint name="right_arm_joint_5" value="0"/>
+        <joint name="right_arm_joint_6" value="0"/>
+    </group_state>
+    <group_state name="random1" group="dual_arms">
+        <joint name="left_arm_fts_tool" value="0"/>
+        <joint name="left_arm_joint_1" value="-0.0719"/>
+        <joint name="left_arm_joint_2" value="-0.0719"/>
+        <joint name="left_arm_joint_3" value="0.0719"/>
+        <joint name="left_arm_joint_4" value="0.9772"/>
+        <joint name="left_arm_joint_5" value="-0.9353"/>
+        <joint name="left_arm_joint_6" value="-0.2158"/>
+        <joint name="right_arm_fts_tool" value="0"/>
+        <joint name="right_arm_joint_1" value="-0.21"/>
+        <joint name="right_arm_joint_2" value="0.26"/>
+        <joint name="right_arm_joint_3" value="0"/>
+        <joint name="right_arm_joint_4" value="0.42"/>
+        <joint name="right_arm_joint_5" value="0"/>
+        <joint name="right_arm_joint_6" value="0"/>
+    </group_state>
+    <group_state name="random2" group="dual_arms">
+        <joint name="left_arm_fts_tool" value="0"/>
+        <joint name="left_arm_joint_1" value="-0.21"/>
+        <joint name="left_arm_joint_2" value="0.26"/>
+        <joint name="left_arm_joint_3" value="0"/>
+        <joint name="left_arm_joint_4" value="0.42"/>
+        <joint name="left_arm_joint_5" value="0"/>
+        <joint name="left_arm_joint_6" value="0"/>
+        <joint name="right_arm_fts_tool" value="0"/>
+        <joint name="right_arm_joint_1" value="-0.0719"/>
+        <joint name="right_arm_joint_2" value="-0.0719"/>
+        <joint name="right_arm_joint_3" value="0.0719"/>
+        <joint name="right_arm_joint_4" value="0.9772"/>
+        <joint name="right_arm_joint_5" value="-0.9353"/>
+        <joint name="right_arm_joint_6" value="-0.2158"/>
+    </group_state>
+    <group_state name="random3" group="dual_arms">
+        <joint name="left_arm_fts_tool" value="0"/>
+        <joint name="left_arm_joint_1" value="0.1862"/>
+        <joint name="left_arm_joint_2" value="0.28"/>
+        <joint name="left_arm_joint_3" value="0.05"/>
+        <joint name="left_arm_joint_4" value="0.77"/>
+        <joint name="left_arm_joint_5" value="-1.22"/>
+        <joint name="left_arm_joint_6" value="-0.9075"/>
+        <joint name="right_arm_fts_tool" value="0"/>
+        <joint name="right_arm_joint_1" value="0.1164"/>
+        <joint name="right_arm_joint_2" value="0.0931"/>
+        <joint name="right_arm_joint_3" value="-0.0931"/>
+        <joint name="right_arm_joint_4" value="-1.63"/>
+        <joint name="right_arm_joint_5" value="-1.33"/>
+        <joint name="right_arm_joint_6" value="-0"/>
+    </group_state>
+    <group_state name="random4" group="dual_arms">    
+        <joint name="left_arm_fts_tool" value="0"/>
+        <joint name="left_arm_joint_1" value="0.1164"/>
+        <joint name="left_arm_joint_2" value="0.0931"/>
+        <joint name="left_arm_joint_3" value="-0.0931"/>
+        <joint name="left_arm_joint_4" value="-1.63"/>
+        <joint name="left_arm_joint_5" value="-1.33"/>
+        <joint name="left_arm_joint_6" value="-0"/>
+        <joint name="right_arm_fts_tool" value="0"/>
+        <joint name="right_arm_joint_1" value="0.1862"/>
+        <joint name="right_arm_joint_2" value="0.28"/>
+        <joint name="right_arm_joint_3" value="0.05"/>
+        <joint name="right_arm_joint_4" value="0.77"/>
+        <joint name="right_arm_joint_5" value="-1.22"/>
+        <joint name="right_arm_joint_6" value="-0.9075"/>
+    </group_state>
+    <group_state name="random5" group="dual_arms">    
+        <joint name="left_arm_fts_tool" value="0"/>
+        <joint name="left_arm_joint_1" value="0.81"/>
+        <joint name="left_arm_joint_2" value="0.13"/>
+        <joint name="left_arm_joint_3" value="0.22"/>
+        <joint name="left_arm_joint_4" value="1.6"/>
+        <joint name="left_arm_joint_5" value="-0.21"/>
+        <joint name="left_arm_joint_6" value="2.28"/>
+        <joint name="right_arm_fts_tool" value="0"/>
+        <joint name="right_arm_joint_1" value="-0.99"/>
+        <joint name="right_arm_joint_2" value="0.4734"/>
+        <joint name="right_arm_joint_3" value="0.2152"/>
+        <joint name="right_arm_joint_4" value="-1.63"/>
+        <joint name="right_arm_joint_5" value="-1.42"/>
+        <joint name="right_arm_joint_6" value="0.94"/>
+    </group_state>
+    <group_state name="random6" group="dual_arms">
+        <joint name="left_arm_fts_tool" value="0"/>
+        <joint name="left_arm_joint_1" value="-0.99"/>
+        <joint name="left_arm_joint_2" value="0.4734"/>
+        <joint name="left_arm_joint_3" value="0.2152"/>
+        <joint name="left_arm_joint_4" value="-1.63"/>
+        <joint name="left_arm_joint_5" value="-1.42"/>
+        <joint name="left_arm_joint_6" value="0.94"/>
+        <joint name="right_arm_fts_tool" value="0"/>
+        <joint name="right_arm_joint_1" value="0.81"/>
+        <joint name="right_arm_joint_2" value="0.13"/>
+        <joint name="right_arm_joint_3" value="0.22"/>
+        <joint name="right_arm_joint_4" value="1.6"/>
+        <joint name="right_arm_joint_5" value="-0.21"/>
+        <joint name="right_arm_joint_6" value="2.28"/>
+    </group_state>
+     <group_state name="left_push_down" group="dual_arms">
         <joint name="left_arm_fts_tool" value="0"/>
         <joint name="left_arm_joint_1" value="-0.725"/>
         <joint name="left_arm_joint_2" value="1.1599"/>
@@ -176,7 +304,7 @@
         <joint name="right_arm_joint_5" value="0.9183"/>
         <joint name="right_arm_joint_6" value="0"/>
     </group_state>
-    <group_state name="lef_forward" group="dual_arms">
+    <group_state name="left_forward" group="dual_arms">
         <joint name="left_arm_fts_tool" value="0"/>
         <joint name="left_arm_joint_1" value="-0.29"/>
         <joint name="left_arm_joint_2" value="1.4499"/>
@@ -229,9 +357,11 @@
     <disable_collisions link1="left_arm_fts" link2="left_arm_link_camera_origin" reason="Never"/>
     <disable_collisions link1="left_arm_fts" link2="left_arm_link_tool" reason="Adjacent"/>
     <disable_collisions link1="left_arm_fts" link2="right_arm_base_link" reason="Never"/>
+    <!-- <disable_collisions link1="left_arm_fts" link2="right_arm_fts" reason="Default"/> -->
     <disable_collisions link1="left_arm_fts" link2="right_arm_link_1" reason="Never"/>
     <disable_collisions link1="left_arm_fts" link2="right_arm_link_camera" reason="Never"/>
     <disable_collisions link1="left_arm_fts" link2="right_arm_link_camera_origin" reason="Never"/>
+    <!-- <disable_collisions link1="left_arm_fts" link2="right_arm_link_tool" reason="Default"/> -->
     <disable_collisions link1="left_arm_link_1" link2="left_arm_link_2" reason="Adjacent"/>
     <disable_collisions link1="left_arm_link_1" link2="right_arm_base_link" reason="Never"/>
     <disable_collisions link1="left_arm_link_1" link2="right_arm_fts" reason="Never"/>
@@ -263,6 +393,7 @@
     <disable_collisions link1="left_arm_link_4" link2="right_arm_base_link" reason="Never"/>
     <disable_collisions link1="left_arm_link_4" link2="right_arm_link_1" reason="Never"/>
     <disable_collisions link1="left_arm_link_4" link2="right_arm_link_camera_origin" reason="Never"/>
+    <!-- <disable_collisions link1="left_arm_link_4" link2="right_arm_link_tool" reason="Default"/> -->
     <disable_collisions link1="left_arm_link_5" link2="left_arm_link_6" reason="Adjacent"/>
     <disable_collisions link1="left_arm_link_5" link2="left_arm_link_camera" reason="Never"/>
     <disable_collisions link1="left_arm_link_5" link2="left_arm_link_camera_origin" reason="Never"/>
@@ -271,6 +402,7 @@
     <disable_collisions link1="left_arm_link_5" link2="right_arm_link_1" reason="Never"/>
     <disable_collisions link1="left_arm_link_5" link2="right_arm_link_camera" reason="Never"/>
     <disable_collisions link1="left_arm_link_5" link2="right_arm_link_camera_origin" reason="Never"/>
+    <!-- <disable_collisions link1="left_arm_link_5" link2="right_arm_link_tool" reason="Default"/> -->
     <disable_collisions link1="left_arm_link_6" link2="left_arm_link_camera" reason="Never"/>
     <disable_collisions link1="left_arm_link_6" link2="left_arm_link_camera_origin" reason="Never"/>
     <disable_collisions link1="left_arm_link_6" link2="left_arm_link_tool" reason="Never"/>
@@ -281,6 +413,7 @@
     <disable_collisions link1="left_arm_link_6" link2="right_arm_link_6" reason="Never"/>
     <disable_collisions link1="left_arm_link_6" link2="right_arm_link_camera" reason="Never"/>
     <disable_collisions link1="left_arm_link_6" link2="right_arm_link_camera_origin" reason="Never"/>
+    <!-- <disable_collisions link1="left_arm_link_6" link2="right_arm_link_tool" reason="Default"/> -->
     <disable_collisions link1="left_arm_link_camera" link2="left_arm_link_camera_origin" reason="Adjacent"/>
     <disable_collisions link1="left_arm_link_camera" link2="left_arm_link_tool" reason="Adjacent"/>
     <disable_collisions link1="left_arm_link_camera" link2="right_arm_base_link" reason="Never"/>
@@ -303,6 +436,10 @@
     <disable_collisions link1="left_arm_link_camera_origin" link2="right_arm_link_camera_origin" reason="Never"/>
     <disable_collisions link1="left_arm_link_camera_origin" link2="right_arm_link_tool" reason="Never"/>
     <disable_collisions link1="left_arm_link_tool" link2="right_arm_base_link" reason="Never"/>
+    <!-- <disable_collisions link1="left_arm_link_tool" link2="right_arm_fts" reason="Default"/> -->
+    <!-- <disable_collisions link1="left_arm_link_tool" link2="right_arm_link_4" reason="Default"/> -->
+    <!-- <disable_collisions link1="left_arm_link_tool" link2="right_arm_link_5" reason="Default"/> -->
+    <!-- <disable_collisions link1="left_arm_link_tool" link2="right_arm_link_6" reason="Default"/> -->
     <disable_collisions link1="left_arm_link_tool" link2="right_arm_link_camera" reason="Never"/>
     <disable_collisions link1="left_arm_link_tool" link2="right_arm_link_camera_origin" reason="Never"/>
     <disable_collisions link1="right_arm_base_link" link2="right_arm_link_1" reason="Adjacent"/>

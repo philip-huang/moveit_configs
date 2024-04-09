@@ -10,71 +10,71 @@ default_acceleration_scaling_factor: 0.1
 joint_limits:
   left_arm_fts_tool:
     has_velocity_limits: false
-    max_velocity: 0
+    max_velocity: 16.2315620435
     has_acceleration_limits: false
-    max_acceleration: 0
+    max_acceleration: 100
   left_arm_joint_1:
     has_velocity_limits: false
-    max_velocity: 0
+    max_velocity: 16.2315620435
     has_acceleration_limits: false
-    max_acceleration: 0
+    max_acceleration: 100
   left_arm_joint_2:
     has_velocity_limits: false
-    max_velocity: 0
+    max_velocity: 16.2315620435
     has_acceleration_limits: false
-    max_acceleration: 0
+    max_acceleration: 100
   left_arm_joint_3:
     has_velocity_limits: false
-    max_velocity: 0
+    max_velocity: 18.3259571459
     has_acceleration_limits: false
-    max_acceleration: 0
+    max_acceleration: 100
   left_arm_joint_4:
     has_velocity_limits: false
-    max_velocity: 0
+    max_velocity: 19.7222205475
     has_acceleration_limits: false
-    max_acceleration: 0
+    max_acceleration: 100
   left_arm_joint_5:
     has_velocity_limits: false
-    max_velocity: 0
+    max_velocity: 19.7222205475
     has_acceleration_limits: false
-    max_acceleration: 0
+    max_acceleration: 100
   left_arm_joint_6:
     has_velocity_limits: false
-    max_velocity: 0
+    max_velocity: 34.9065850399
     has_acceleration_limits: false
-    max_acceleration: 0
+    max_acceleration: 100
   right_arm_fts_tool:
     has_velocity_limits: false
     max_velocity: 0
     has_acceleration_limits: false
-    max_acceleration: 0
+    max_acceleration: 100
   right_arm_joint_1:
     has_velocity_limits: false
-    max_velocity: 0
+    max_velocity: 16.2315620435
     has_acceleration_limits: false
-    max_acceleration: 0
+    max_acceleration: 100
   right_arm_joint_2:
     has_velocity_limits: false
-    max_velocity: 0
+    max_velocity: 16.2315620435
     has_acceleration_limits: false
-    max_acceleration: 0
+    max_acceleration: 100
   right_arm_joint_3:
     has_velocity_limits: false
-    max_velocity: 0
+    max_velocity: 18.3259571459
     has_acceleration_limits: false
-    max_acceleration: 0
+    max_acceleration: 100
   right_arm_joint_4:
     has_velocity_limits: false
-    max_velocity: 0
+    max_velocity: 19.7222205475
     has_acceleration_limits: false
-    max_acceleration: 0
+    max_acceleration: 100
   right_arm_joint_5:
     has_velocity_limits: false
-    max_velocity: 0
+    max_velocity: 19.7222205475
     has_acceleration_limits: false
-    max_acceleration: 0
+    max_acceleration: 100
   right_arm_joint_6:
     has_velocity_limits: false
-    max_velocity: 0
+    max_velocity: 34.9065850399
     has_acceleration_limits: false
-    max_acceleration: 0
+    max_acceleration: 100
