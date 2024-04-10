@@ -7,6 +7,7 @@
 
   <xacro:include filename="$(find moveit_resources_panda_description)/urdf/panda_arm.xacro"/>
   <xacro:include filename="$(find moveit_resources_panda_description)/urdf/hand.xacro"/>
+  <xacro:include filename="box.xacro"/>
 
   <!-- box shaped table as base for the 4 Pandas -->
   <link name="base">
@@ -27,149 +28,17 @@
     </collision>
   </link>
 
-  <joint name="base_link_to_crate0_joint" type="fixed">
-    <parent link="base"/>
-    <child link="crate0"/>
-    <origin xyz="0.53 0.1 0.1" rpy="0 0 1.57"/>
-  </joint>
+  <xacro:add_box parent_link="base" box_name="box1" box_length="0.5" box_width="0.5" 
+      box_height="0.5" box_x="0" box_y="0" box_z="0" box_color="0 0 1 1"/>
+  <xacro:add_box parent_link="base" box_name="box2" box_length="0.5" box_width="0.5"
+      box_height="0.5" box_x="0.5" box_y="0" box_z="0" box_color="0 1 0 1"/>
+  <xacro:add_box parent_link="base" box_name="box3" box_length="0.5" box_width="0.5"
+     box_height="0.5" box_x="-0.5" box_y="0" box_z="0" box_color="1 0 0 1"/>
+  <xacro:add_box parent_link="base" box_name="box4" box_length="0.5" box_width="0.5"
+     box_height="0.5" box_x="0" box_y="0.5" box_z="0" box_color="1 1 0 1"/>
+  <xacro:add_box parent_link="base" box_name="box5" box_length="0.5" box_width="0.5"
+     box_height="0.5" box_x="0" box_y="-0.5" box_z="0" box_color="0.5 0 0.5 1"/>
 
-  <link name="crate0">
-    <visual>
-      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
-      <geometry>
-        <mesh filename="/root/catkin_ws/src/moveit_configs/stl/crate.stl" scale="0.01 0.01 0.01"/>
-      </geometry>
-    </visual>
-    <collision>
-      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
-      <geometry>
-        <mesh filename="/root/catkin_ws/src/moveit_configs/stl/crate.stl" scale="0.01 0.01 0.01"/>
-      </geometry>
-    </collision>
-  </link>
-
-  <joint name="base_link_to_crate_joint" type="fixed">
-    <parent link="base"/>
-    <child link="crate"/>
-    <origin xyz="0.13 0.1 0.1" rpy="0 0 1.57"/>
-  </joint>
-
-  <link name="crate">
-    <visual>
-      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
-      <geometry>
-        <mesh filename="/root/catkin_ws/src/moveit_configs/stl/crate.stl" scale="0.01 0.01 0.01"/>
-      </geometry>
-    </visual>
-    <collision>
-      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
-      <geometry>
-        <mesh filename="/root/catkin_ws/src/moveit_configs/stl/crate.stl" scale="0.01 0.01 0.01"/>
-      </geometry>
-    </collision>
-  </link>
-
-  <joint name="base_link_to_crate1_joint" type="fixed">
-    <parent link="base"/>
-    <child link="crate1"/>
-    <origin xyz="-0.27 0.1 0.1" rpy="0 0 1.57"/>
-  </joint>
-
-  <link name="crate1">
-    <visual>
-      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
-      <geometry>
-        <mesh filename="/root/catkin_ws/src/moveit_configs/stl/crate.stl" scale="0.01 0.01 0.01"/>
-      </geometry>
-    </visual>
-    <collision>
-      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
-      <geometry>
-        <mesh filename="/root/catkin_ws/src/moveit_configs/stl/crate.stl" scale="0.01 0.01 0.01"/>
-      </geometry>
-    </collision>
-  </link>
-
-  <joint name="base_link_to_crate2_joint" type="fixed">
-    <parent link="base"/>
-    <child link="crate2"/>
-    <origin xyz="-0.67 0.1 0.1" rpy="0 0 1.57"/>
-  </joint>
-
-  <link name="crate2">
-    <visual>
-      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
-      <geometry>
-        <mesh filename="/root/catkin_ws/src/moveit_configs/stl/crate.stl" scale="0.01 0.01 0.01"/>
-      </geometry>
-    </visual>
-    <collision>
-      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
-      <geometry>
-        <mesh filename="/root/catkin_ws/src/moveit_configs/stl/crate.stl" scale="0.01 0.01 0.01"/>
-      </geometry>
-    </collision>
-  </link>
-
-  <joint name="base_link_to_lamp0_joint" type="fixed">
-    <parent link="base"/>
-    <child link="lamp0"/>
-    <origin xyz="0.5 0.0 0.8" rpy="0 0 0"/>
-  </joint>
-  <link name="lamp0">
-    <visual>
-      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
-      <geometry>
-        <mesh filename="/root/catkin_ws/src/moveit_configs/stl/lamp.stl" scale="0.000027 0.000027 0.000027"/>
-      </geometry>
-    </visual>
-    <collision>
-      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
-      <geometry>
-        <mesh filename="/root/catkin_ws/src/moveit_configs/stl/crate.stl" scale="0.01 0.01 0.01"/>
-      </geometry>
-    </collision>
-  </link>
-
-  <joint name="base_link_to_lamp1_joint" type="fixed">
-    <parent link="base"/>
-    <child link="lamp1"/>
-    <origin xyz="0.0 0.0 1.13" rpy="0 0 0"/>
-  </joint>
-  <link name="lamp1">
-    <visual>
-      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
-      <geometry>
-        <mesh filename="/root/catkin_ws/src/moveit_configs/stl/lamp.stl" scale="0.000027 0.000032 0.000032"/>
-      </geometry>
-    </visual>
-    <collision>
-      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
-      <geometry>
-        <mesh filename="/root/catkin_ws/src/moveit_configs/stl/crate.stl" scale="0.01 0.01 0.01"/>
-      </geometry>
-    </collision>
-  </link>
-
-  <joint name="base_link_to_lamp2_joint" type="fixed">
-    <parent link="base"/>
-    <child link="lamp2"/>
-    <origin xyz="-0.5 0.0 0.8" rpy="0 0 0"/>
-  </joint>
-  <link name="lamp2">
-    <visual>
-      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
-      <geometry>
-        <mesh filename="/root/catkin_ws/src/moveit_configs/stl/lamp.stl" scale="0.000027 0.000027 0.000027"/>
-      </geometry>
-    </visual>
-    <collision>
-      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
-      <geometry>
-        <mesh filename="/root/catkin_ws/src/moveit_configs/stl/crate.stl" scale="0.01 0.01 0.01"/>
-      </geometry>
-    </collision>
-  </link>
 
   <!-- panda_0 with gripper -->
   <xacro:panda_arm arm_id="$(arg arm_id_0)" connected_to="base"  xyz="0.4 -0.4 0.1" rpy="0 0 2.28"/>

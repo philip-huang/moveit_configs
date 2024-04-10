@@ -22,139 +22,486 @@
       </geometry>
     </collision>
   </link>
-  <joint name="base_link_to_crate0_joint" type="fixed">
-    <parent link="base"/>
-    <child link="crate0"/>
-    <origin rpy="0 0 1.57" xyz="0.53 0.1 0.1"/>
-  </joint>
-  <link name="crate0">
+  <!-- Material for the box -->
+  <material name="box1_box_material">
+    <color rgba="0 0 1 1"/>
+    <!-- Tan color -->
+  </material>
+  <!-- Bottom plate -->
+  <link name="box1_bottom_plate">
     <visual>
-      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
       <geometry>
-        <mesh filename="/root/catkin_ws/src/moveit_configs/stl/crate.stl" scale="0.01 0.01 0.01"/>
+        <box size="0.5 0.5 0.02"/>
       </geometry>
+      <material name="box1_box_material"/>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
       <geometry>
-        <mesh filename="/root/catkin_ws/src/moveit_configs/stl/crate.stl" scale="0.01 0.01 0.01"/>
+        <box size="0.5 0.5 0.02"/>
       </geometry>
     </collision>
   </link>
-  <joint name="base_link_to_crate_joint" type="fixed">
+  <joint name="box1_bottom_plate_joint" type="fixed">
     <parent link="base"/>
-    <child link="crate"/>
-    <origin rpy="0 0 1.57" xyz="0.13 0.1 0.1"/>
+    <child link="box1_bottom_plate"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
   </joint>
-  <link name="crate">
+  <link name="box1_bottom_plate_front">
     <visual>
-      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
       <geometry>
-        <mesh filename="/root/catkin_ws/src/moveit_configs/stl/crate.stl" scale="0.01 0.01 0.01"/>
+        <box size="0.5 0.02 0.5"/>
       </geometry>
+      <material name="box1_box_material"/>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
       <geometry>
-        <mesh filename="/root/catkin_ws/src/moveit_configs/stl/crate.stl" scale="0.01 0.01 0.01"/>
+        <box size="0.5 0.02 0.5"/>
       </geometry>
     </collision>
   </link>
-  <joint name="base_link_to_crate1_joint" type="fixed">
-    <parent link="base"/>
-    <child link="crate1"/>
-    <origin rpy="0 0 1.57" xyz="-0.27 0.1 0.1"/>
+  <joint name="box1_bottom_plate_front_joint" type="fixed">
+    <parent link="box1_bottom_plate"/>
+    <child link="box1_bottom_plate_front"/>
+    <origin rpy="0 0 0" xyz="0 0.25 0.26"/>
   </joint>
-  <link name="crate1">
+  <link name="box1_bottom_plate_back">
     <visual>
-      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
       <geometry>
-        <mesh filename="/root/catkin_ws/src/moveit_configs/stl/crate.stl" scale="0.01 0.01 0.01"/>
+        <box size="0.5 0.02 0.5"/>
       </geometry>
+      <material name="box1_box_material"/>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
       <geometry>
-        <mesh filename="/root/catkin_ws/src/moveit_configs/stl/crate.stl" scale="0.01 0.01 0.01"/>
+        <box size="0.5 0.02 0.5"/>
       </geometry>
     </collision>
   </link>
-  <joint name="base_link_to_crate2_joint" type="fixed">
-    <parent link="base"/>
-    <child link="crate2"/>
-    <origin rpy="0 0 1.57" xyz="-0.67 0.1 0.1"/>
+  <joint name="box1_bottom_plate_back_joint" type="fixed">
+    <parent link="box1_bottom_plate"/>
+    <child link="box1_bottom_plate_back"/>
+    <origin rpy="0 0 0" xyz="0 -0.25 0.26"/>
   </joint>
-  <link name="crate2">
+  <link name="box1_bottom_plate_left">
     <visual>
-      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
       <geometry>
-        <mesh filename="/root/catkin_ws/src/moveit_configs/stl/crate.stl" scale="0.01 0.01 0.01"/>
+        <box size="0.02 0.5 0.5"/>
       </geometry>
+      <material name="box1_box_material"/>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
       <geometry>
-        <mesh filename="/root/catkin_ws/src/moveit_configs/stl/crate.stl" scale="0.01 0.01 0.01"/>
+        <box size="0.02 0.5 0.5"/>
       </geometry>
     </collision>
   </link>
-  <joint name="base_link_to_lamp0_joint" type="fixed">
-    <parent link="base"/>
-    <child link="lamp0"/>
-    <origin rpy="0 0 0" xyz="0.5 0.0 0.8"/>
+  <joint name="box1_bottom_plate_left_joint" type="fixed">
+    <parent link="box1_bottom_plate"/>
+    <child link="box1_bottom_plate_left"/>
+    <origin rpy="0 0 0" xyz="-0.25 0 0.26"/>
   </joint>
-  <link name="lamp0">
+  <link name="box1_bottom_plate_right">
     <visual>
-      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
       <geometry>
-        <mesh filename="/root/catkin_ws/src/moveit_configs/stl/lamp.stl" scale="0.000027 0.000027 0.000027"/>
+        <box size="0.02 0.5 0.5"/>
       </geometry>
+      <material name="box1_box_material"/>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
       <geometry>
-        <mesh filename="/root/catkin_ws/src/moveit_configs/stl/crate.stl" scale="0.01 0.01 0.01"/>
+        <box size="0.02 0.5 0.5"/>
       </geometry>
     </collision>
   </link>
-  <joint name="base_link_to_lamp1_joint" type="fixed">
-    <parent link="base"/>
-    <child link="lamp1"/>
-    <origin rpy="0 0 0" xyz="0.0 0.0 1.13"/>
+  <joint name="box1_bottom_plate_right_joint" type="fixed">
+    <parent link="box1_bottom_plate"/>
+    <child link="box1_bottom_plate_right"/>
+    <origin rpy="0 0 0" xyz="0.25 0 0.26"/>
   </joint>
-  <link name="lamp1">
+  <!-- Material for the box -->
+  <material name="box2_box_material">
+    <color rgba="0 1 0 1"/>
+    <!-- Tan color -->
+  </material>
+  <!-- Bottom plate -->
+  <link name="box2_bottom_plate">
     <visual>
-      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
       <geometry>
-        <mesh filename="/root/catkin_ws/src/moveit_configs/stl/lamp.stl" scale="0.000027 0.000032 0.000032"/>
+        <box size="0.5 0.5 0.02"/>
       </geometry>
+      <material name="box2_box_material"/>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
       <geometry>
-        <mesh filename="/root/catkin_ws/src/moveit_configs/stl/crate.stl" scale="0.01 0.01 0.01"/>
+        <box size="0.5 0.5 0.02"/>
       </geometry>
     </collision>
   </link>
-  <joint name="base_link_to_lamp2_joint" type="fixed">
+  <joint name="box2_bottom_plate_joint" type="fixed">
     <parent link="base"/>
-    <child link="lamp2"/>
-    <origin rpy="0 0 0" xyz="-0.5 0.0 0.8"/>
+    <child link="box2_bottom_plate"/>
+    <origin rpy="0 0 0" xyz="0.5 0 0"/>
   </joint>
-  <link name="lamp2">
+  <link name="box2_bottom_plate_front">
     <visual>
-      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
       <geometry>
-        <mesh filename="/root/catkin_ws/src/moveit_configs/stl/lamp.stl" scale="0.000027 0.000027 0.000027"/>
+        <box size="0.5 0.02 0.5"/>
       </geometry>
+      <material name="box2_box_material"/>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
       <geometry>
-        <mesh filename="/root/catkin_ws/src/moveit_configs/stl/crate.stl" scale="0.01 0.01 0.01"/>
+        <box size="0.5 0.02 0.5"/>
       </geometry>
     </collision>
   </link>
+  <joint name="box2_bottom_plate_front_joint" type="fixed">
+    <parent link="box2_bottom_plate"/>
+    <child link="box2_bottom_plate_front"/>
+    <origin rpy="0 0 0" xyz="0 0.25 0.26"/>
+  </joint>
+  <link name="box2_bottom_plate_back">
+    <visual>
+      <geometry>
+        <box size="0.5 0.02 0.5"/>
+      </geometry>
+      <material name="box2_box_material"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.5 0.02 0.5"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="box2_bottom_plate_back_joint" type="fixed">
+    <parent link="box2_bottom_plate"/>
+    <child link="box2_bottom_plate_back"/>
+    <origin rpy="0 0 0" xyz="0 -0.25 0.26"/>
+  </joint>
+  <link name="box2_bottom_plate_left">
+    <visual>
+      <geometry>
+        <box size="0.02 0.5 0.5"/>
+      </geometry>
+      <material name="box2_box_material"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.02 0.5 0.5"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="box2_bottom_plate_left_joint" type="fixed">
+    <parent link="box2_bottom_plate"/>
+    <child link="box2_bottom_plate_left"/>
+    <origin rpy="0 0 0" xyz="-0.25 0 0.26"/>
+  </joint>
+  <link name="box2_bottom_plate_right">
+    <visual>
+      <geometry>
+        <box size="0.02 0.5 0.5"/>
+      </geometry>
+      <material name="box2_box_material"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.02 0.5 0.5"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="box2_bottom_plate_right_joint" type="fixed">
+    <parent link="box2_bottom_plate"/>
+    <child link="box2_bottom_plate_right"/>
+    <origin rpy="0 0 0" xyz="0.25 0 0.26"/>
+  </joint>
+  <!-- Material for the box -->
+  <material name="box3_box_material">
+    <color rgba="1 0 0 1"/>
+    <!-- Tan color -->
+  </material>
+  <!-- Bottom plate -->
+  <link name="box3_bottom_plate">
+    <visual>
+      <geometry>
+        <box size="0.5 0.5 0.02"/>
+      </geometry>
+      <material name="box3_box_material"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.5 0.5 0.02"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="box3_bottom_plate_joint" type="fixed">
+    <parent link="base"/>
+    <child link="box3_bottom_plate"/>
+    <origin rpy="0 0 0" xyz="-0.5 0 0"/>
+  </joint>
+  <link name="box3_bottom_plate_front">
+    <visual>
+      <geometry>
+        <box size="0.5 0.02 0.5"/>
+      </geometry>
+      <material name="box3_box_material"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.5 0.02 0.5"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="box3_bottom_plate_front_joint" type="fixed">
+    <parent link="box3_bottom_plate"/>
+    <child link="box3_bottom_plate_front"/>
+    <origin rpy="0 0 0" xyz="0 0.25 0.26"/>
+  </joint>
+  <link name="box3_bottom_plate_back">
+    <visual>
+      <geometry>
+        <box size="0.5 0.02 0.5"/>
+      </geometry>
+      <material name="box3_box_material"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.5 0.02 0.5"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="box3_bottom_plate_back_joint" type="fixed">
+    <parent link="box3_bottom_plate"/>
+    <child link="box3_bottom_plate_back"/>
+    <origin rpy="0 0 0" xyz="0 -0.25 0.26"/>
+  </joint>
+  <link name="box3_bottom_plate_left">
+    <visual>
+      <geometry>
+        <box size="0.02 0.5 0.5"/>
+      </geometry>
+      <material name="box3_box_material"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.02 0.5 0.5"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="box3_bottom_plate_left_joint" type="fixed">
+    <parent link="box3_bottom_plate"/>
+    <child link="box3_bottom_plate_left"/>
+    <origin rpy="0 0 0" xyz="-0.25 0 0.26"/>
+  </joint>
+  <link name="box3_bottom_plate_right">
+    <visual>
+      <geometry>
+        <box size="0.02 0.5 0.5"/>
+      </geometry>
+      <material name="box3_box_material"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.02 0.5 0.5"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="box3_bottom_plate_right_joint" type="fixed">
+    <parent link="box3_bottom_plate"/>
+    <child link="box3_bottom_plate_right"/>
+    <origin rpy="0 0 0" xyz="0.25 0 0.26"/>
+  </joint>
+  <!-- Material for the box -->
+  <material name="box4_box_material">
+    <color rgba="1 1 0 1"/>
+    <!-- Tan color -->
+  </material>
+  <!-- Bottom plate -->
+  <link name="box4_bottom_plate">
+    <visual>
+      <geometry>
+        <box size="0.5 0.5 0.02"/>
+      </geometry>
+      <material name="box4_box_material"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.5 0.5 0.02"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="box4_bottom_plate_joint" type="fixed">
+    <parent link="base"/>
+    <child link="box4_bottom_plate"/>
+    <origin rpy="0 0 0" xyz="0 0.5 0"/>
+  </joint>
+  <link name="box4_bottom_plate_front">
+    <visual>
+      <geometry>
+        <box size="0.5 0.02 0.5"/>
+      </geometry>
+      <material name="box4_box_material"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.5 0.02 0.5"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="box4_bottom_plate_front_joint" type="fixed">
+    <parent link="box4_bottom_plate"/>
+    <child link="box4_bottom_plate_front"/>
+    <origin rpy="0 0 0" xyz="0 0.25 0.26"/>
+  </joint>
+  <link name="box4_bottom_plate_back">
+    <visual>
+      <geometry>
+        <box size="0.5 0.02 0.5"/>
+      </geometry>
+      <material name="box4_box_material"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.5 0.02 0.5"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="box4_bottom_plate_back_joint" type="fixed">
+    <parent link="box4_bottom_plate"/>
+    <child link="box4_bottom_plate_back"/>
+    <origin rpy="0 0 0" xyz="0 -0.25 0.26"/>
+  </joint>
+  <link name="box4_bottom_plate_left">
+    <visual>
+      <geometry>
+        <box size="0.02 0.5 0.5"/>
+      </geometry>
+      <material name="box4_box_material"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.02 0.5 0.5"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="box4_bottom_plate_left_joint" type="fixed">
+    <parent link="box4_bottom_plate"/>
+    <child link="box4_bottom_plate_left"/>
+    <origin rpy="0 0 0" xyz="-0.25 0 0.26"/>
+  </joint>
+  <link name="box4_bottom_plate_right">
+    <visual>
+      <geometry>
+        <box size="0.02 0.5 0.5"/>
+      </geometry>
+      <material name="box4_box_material"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.02 0.5 0.5"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="box4_bottom_plate_right_joint" type="fixed">
+    <parent link="box4_bottom_plate"/>
+    <child link="box4_bottom_plate_right"/>
+    <origin rpy="0 0 0" xyz="0.25 0 0.26"/>
+  </joint>
+  <!-- Material for the box -->
+  <material name="box5_box_material">
+    <color rgba="0.5 0 0.5 1"/>
+    <!-- Tan color -->
+  </material>
+  <!-- Bottom plate -->
+  <link name="box5_bottom_plate">
+    <visual>
+      <geometry>
+        <box size="0.5 0.5 0.02"/>
+      </geometry>
+      <material name="box5_box_material"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.5 0.5 0.02"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="box5_bottom_plate_joint" type="fixed">
+    <parent link="base"/>
+    <child link="box5_bottom_plate"/>
+    <origin rpy="0 0 0" xyz="0 -0.5 0"/>
+  </joint>
+  <link name="box5_bottom_plate_front">
+    <visual>
+      <geometry>
+        <box size="0.5 0.02 0.5"/>
+      </geometry>
+      <material name="box5_box_material"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.5 0.02 0.5"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="box5_bottom_plate_front_joint" type="fixed">
+    <parent link="box5_bottom_plate"/>
+    <child link="box5_bottom_plate_front"/>
+    <origin rpy="0 0 0" xyz="0 0.25 0.26"/>
+  </joint>
+  <link name="box5_bottom_plate_back">
+    <visual>
+      <geometry>
+        <box size="0.5 0.02 0.5"/>
+      </geometry>
+      <material name="box5_box_material"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.5 0.02 0.5"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="box5_bottom_plate_back_joint" type="fixed">
+    <parent link="box5_bottom_plate"/>
+    <child link="box5_bottom_plate_back"/>
+    <origin rpy="0 0 0" xyz="0 -0.25 0.26"/>
+  </joint>
+  <link name="box5_bottom_plate_left">
+    <visual>
+      <geometry>
+        <box size="0.02 0.5 0.5"/>
+      </geometry>
+      <material name="box5_box_material"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.02 0.5 0.5"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="box5_bottom_plate_left_joint" type="fixed">
+    <parent link="box5_bottom_plate"/>
+    <child link="box5_bottom_plate_left"/>
+    <origin rpy="0 0 0" xyz="-0.25 0 0.26"/>
+  </joint>
+  <link name="box5_bottom_plate_right">
+    <visual>
+      <geometry>
+        <box size="0.02 0.5 0.5"/>
+      </geometry>
+      <material name="box5_box_material"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.02 0.5 0.5"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="box5_bottom_plate_right_joint" type="fixed">
+    <parent link="box5_bottom_plate"/>
+    <child link="box5_bottom_plate_right"/>
+    <origin rpy="0 0 0" xyz="0.25 0 0.26"/>
+  </joint>
   <joint name="panda0_joint_base" type="fixed">
     <parent link="base"/>
     <child link="panda0_link0"/>
@@ -1044,4 +1391,3 @@
     <mimic joint="panda3_finger_joint1"/>
   </joint>
 </robot>
-
