@@ -16,6 +16,7 @@ controller_list:
   - name: fake_panda1_arm_controller
     type: $(arg fake_execution_type)
     joints:
+      - panda1_joint1
       - panda1_joint2
       - panda1_joint3
       - panda1_joint4
@@ -50,6 +51,7 @@ controller_list:
       - panda0_joint5
       - panda0_joint6
       - panda0_joint7
+      - panda1_joint1
       - panda1_joint2
       - panda1_joint3
       - panda1_joint4

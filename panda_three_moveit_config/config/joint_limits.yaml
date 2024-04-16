@@ -63,6 +63,11 @@ joint_limits:
     max_velocity: 0.2
     has_acceleration_limits: false
     max_acceleration: 0
+  panda1_joint1:
+    has_velocity_limits: true
+    max_velocity: 2.3925
+    has_acceleration_limits: false
+    max_acceleration: 0
   panda1_joint2:
     has_velocity_limits: true
     max_velocity: 2.3925
