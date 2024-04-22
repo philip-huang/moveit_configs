@@ -56,4 +56,3 @@
   <xacro:panda_arm arm_id="$(arg arm_id_3)" connected_to="base"  xyz="0.4 0.4 0.1" rpy="0 0 -2.28"/>
   <xacro:hand ns="$(arg arm_id_3)" rpy="0 0 0" connected_to="$(arg arm_id_3)_link8"/>
 </robot>
-

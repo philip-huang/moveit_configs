@@ -724,6 +724,29 @@
     <limit effort="20" lower="0.0" upper="0.04" velocity="0.2"/>
     <mimic joint="panda0_finger_joint1"/>
   </joint>
+  <material name="rod_0_material">
+    <color rgba="0.5 0.5 0.5 1"/>
+  </material>
+  <link name="rod_0">
+    <visual>
+      <geometry>
+        <rod length="0.5" radius="0.015"/>
+      </geometry>
+      <material name="rod_0_material"/>
+    </visual>
+    <collision>
+      <geometry>
+        <rod length="0.5" radius="0.015"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Attach the rod to the specified parent link -->
+  <joint name="rod_0_joint" type="fixed">
+    <parent link="panda0_hand"/>
+    <child link="rod_0"/>
+    <origin rpy="0 1.5708 0" xyz="0 0 0.1"/>
+    <!-- Adjust as needed -->
+  </joint>
   <joint name="panda1_joint_base" type="fixed">
     <parent link="base"/>
     <child link="panda1_link0"/>
@@ -946,6 +969,30 @@
     <limit effort="20" lower="0.0" upper="0.04" velocity="0.2"/>
     <mimic joint="panda1_finger_joint1"/>
   </joint>
+  <material name="rod_1_material">
+    <color rgba="0.5 0.5 0.5 1"/>
+  </material>
+  <link name="rod_1">
+    <visual>
+      <geometry>
+        <rod length="0.5" radius="0.015"/>
+      </geometry>
+      <material name="rod_1_material"/>
+    </visual>
+    <collision>
+      <geometry>
+        <rod length="0.5" radius="0.015"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Attach the rod to the specified parent link -->
+  <joint name="rod_1_joint" type="fixed">
+    <parent link="panda1_hand"/>
+    <child link="rod_1"/>
+    <origin rpy="0 1.5708 0" xyz="0 0 0.1"/>
+    <!-- Adjust as needed -->
+  </joint>
+
   <joint name="panda2_joint_base" type="fixed">
     <parent link="base"/>
     <child link="panda2_link0"/>
@@ -1168,6 +1215,30 @@
     <limit effort="20" lower="0.0" upper="0.04" velocity="0.2"/>
     <mimic joint="panda2_finger_joint1"/>
   </joint>
+  <material name="rod_2_material">
+    <color rgba="0.5 0.5 0.5 1"/>
+  </material>
+  <link name="rod_2">
+    <visual>
+      <geometry>
+        <rod length="0.5" radius="0.015"/>
+      </geometry>
+      <material name="rod_2_material"/>
+    </visual>
+    <collision>
+      <geometry>
+        <rod length="0.5" radius="0.015"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Attach the rod to the specified parent link -->
+  <joint name="rod_2_joint" type="fixed">
+    <parent link="panda0_hand"/>
+    <child link="rod_2"/>
+    <origin rpy="0 1.5708 0" xyz="0 0 0.1"/>
+    <!-- Adjust as needed -->
+  </joint>
+
   <joint name="panda3_joint_base" type="fixed">
     <parent link="base"/>
     <child link="panda3_link0"/>
@@ -1390,4 +1461,28 @@
     <limit effort="20" lower="0.0" upper="0.04" velocity="0.2"/>
     <mimic joint="panda3_finger_joint1"/>
   </joint>
+  <material name="rod_3_material">
+    <color rgba="0.5 0.5 0.5 1"/>
+  </material>
+  <link name="rod_3">
+    <visual>
+      <geometry>
+        <rod length="0.5" radius="0.015"/>
+      </geometry>
+      <material name="rod_3_material"/>
+    </visual>
+    <collision>
+      <geometry>
+        <rod length="0.5" radius="0.015"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Attach the rod to the specified parent link -->
+  <joint name="rod_3_joint" type="fixed">
+    <parent link="panda0_hand"/>
+    <child link="rod_3"/>
+    <origin rpy="0 1.5708 0" xyz="0 0 0.1"/>
+    <!-- Adjust as needed -->
+  </joint>
+
 </robot>
