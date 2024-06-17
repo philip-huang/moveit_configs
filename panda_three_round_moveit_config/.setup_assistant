@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: panda_three_round_moveit_config
+    relative_path: ../panda_three_description/urdf/panda_three_round.urdf.xacro
+    xacro_args: ""
+  SRDF:
+    relative_path: config/panda.srdf
+  CONFIG:
+    author_name: Philip Huang
+    author_email: philiphuang@cmu.edu
+    generated_timestamp: 1718656425
