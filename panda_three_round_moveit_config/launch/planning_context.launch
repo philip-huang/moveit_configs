@@ -6,7 +6,7 @@
   <arg name="robot_description" default="robot_description"/>
 
   <!-- Load universal robot description format (URDF) -->
-  <param if="$(arg load_robot_description)" name="$(arg robot_description)" command="xacro   '$(find panda_three_moveit_config)/../panda_three_description/urdf/panda_three_round.urdf.xacro'"/>
+  <param if="$(arg load_robot_description)" name="$(arg robot_description)" command="xacro  '$(find panda_three_round_moveit_config)/../panda_three_description/urdf/panda_three_round.urdf.xacro'"/>
 
   <!-- The semantic description that corresponds to the URDF -->
   <param name="$(arg robot_description)_semantic" textfile="$(find panda_three_round_moveit_config)/config/panda.srdf" />

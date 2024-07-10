@@ -5,7 +5,7 @@
   <arg name="paused" default="false" doc="Start Gazebo paused"/>
   <arg name="world_name" default="worlds/empty.world" doc="Gazebo world file"/>
   <arg name="world_pose" default="-x 0 -y 0 -z 0 -R 0 -P 0 -Y 0" doc="Pose to spawn the robot at"/>
-  <arg name="initial_joint_positions" default=" -J panda0_joint1 -0.3634 -J panda0_joint2 -0.245 -J panda0_joint3 0.1473 -J panda0_joint4 -1.1659 -J panda0_joint5 0 -J panda0_joint6 0.8515 -J panda0_joint7 0.1473 -J panda1_joint1 0.1473 -J panda1_joint2 -0.4362 -J panda1_joint3 -0.2455 -J panda1_joint4 -1.5533 -J panda1_joint5 -0.167 -J panda1_joint6 1.2093 -J panda1_joint7 0.2259 -J panda2_joint1 0.0491 -J panda2_joint2 -0.1852 -J panda2_joint3 -0.0491 -J panda2_joint4 -1.2077 -J panda2_joint5 0.0098 -J panda2_joint6 0.9538 -J panda2_joint7 0" doc="Initial joint configuration of the robot"/>
+  <arg name="initial_joint_positions" default=" -J panda0_finger_joint1 0.04 -J panda0_joint1 -0.3634 -J panda0_joint2 -0.245 -J panda0_joint3 0.1473 -J panda0_joint4 -1.1659 -J panda0_joint5 0 -J panda0_joint6 0.8515 -J panda0_joint7 0.1473 -J panda1_finger_joint1 0.04 -J panda1_joint1 0.1473 -J panda1_joint2 -0.4362 -J panda1_joint3 -0.2455 -J panda1_joint4 -1.5533 -J panda1_joint5 -0.167 -J panda1_joint6 1.2093 -J panda1_joint7 0.2259 -J panda2_finger_joint1 0.04 -J panda2_joint1 0.0491 -J panda2_joint2 -0.1852 -J panda2_joint3 -0.0491 -J panda2_joint4 -1.2077 -J panda2_joint5 0.0098 -J panda2_joint6 0.9538 -J panda2_joint7 0" doc="Initial joint configuration of the robot"/>
 
   <!-- Start Gazebo paused to allow the controllers to pickup the initial pose -->
   <include file="$(find gazebo_ros)/launch/empty_world.launch" pass_all_args="true">
@@ -13,7 +13,7 @@
   </include>
 
   <!-- Set the robot urdf on the parameter server -->
-  <param name="robot_description" command="xacro  '$(find panda_three_moveit_config)/../panda_three_description/urdf/panda_three_round.urdf.xacro'" />
+  <param name="robot_description" command="xacro  '$(find panda_three_round_moveit_config)/../panda_three_description/urdf/panda_three_round.urdf.xacro'" />
 
   <!-- Unpause the simulation after loading the robot model -->
   <arg name="unpause" value="$(eval '' if arg('paused') else '-unpause')" />
