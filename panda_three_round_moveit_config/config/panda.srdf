@@ -64,26 +64,26 @@
     </group>
     <!--GROUP STATES: Purpose: Define a named state for a particular group, in terms of joint values. This is useful to define states like 'folded arms'-->
     <group_state name="ready_pose" group="panda_multi_arm">
-        <joint name="panda0_joint1" value="-0.3634"/>
-        <joint name="panda0_joint2" value="-0.245"/>
-        <joint name="panda0_joint3" value="0.1473"/>
-        <joint name="panda0_joint4" value="-1.1659"/>
+        <joint name="panda0_joint1" value="-0.3558"/>
+        <joint name="panda0_joint2" value="-1.2803"/>
+        <joint name="panda0_joint3" value="0.0102"/>
+        <joint name="panda0_joint4" value="-2.1179"/>
         <joint name="panda0_joint5" value="0"/>
         <joint name="panda0_joint6" value="0.8515"/>
         <joint name="panda0_joint7" value="0.1473"/>
         <joint name="panda1_joint1" value="0.1473"/>
-        <joint name="panda1_joint2" value="-0.4362"/>
-        <joint name="panda1_joint3" value="-0.2455"/>
-        <joint name="panda1_joint4" value="-1.5533"/>
+        <joint name="panda1_joint2" value="-1.2803"/>
+        <joint name="panda1_joint3" value="-0.0712"/>
+        <joint name="panda1_joint4" value="-2.1179"/>
         <joint name="panda1_joint5" value="-0.167"/>
-        <joint name="panda1_joint6" value="1.2093"/>
+        <joint name="panda1_joint6" value="0.9085"/>
         <joint name="panda1_joint7" value="0.2259"/>
         <joint name="panda2_joint1" value="0.0491"/>
-        <joint name="panda2_joint2" value="-0.1852"/>
+        <joint name="panda2_joint2" value="-1.2713"/>
         <joint name="panda2_joint3" value="-0.0491"/>
-        <joint name="panda2_joint4" value="-1.2077"/>
+        <joint name="panda2_joint4" value="-2.1179"/>
         <joint name="panda2_joint5" value="0.0098"/>
-        <joint name="panda2_joint6" value="0.9538"/>
+        <joint name="panda2_joint6" value="0.8556"/>
         <joint name="panda2_joint7" value="0"/>
     </group_state>
     <group_state name="pose1" group="panda_multi_arm">
