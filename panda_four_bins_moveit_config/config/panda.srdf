@@ -57,21 +57,25 @@
         <joint name="panda0_hand_joint"/>
         <joint name="panda0_finger_joint1"/>
         <joint name="panda0_finger_joint2"/>
+        <joint name="rod_0_joint"/>
     </group>
     <group name="panda2_hand">
         <joint name="panda2_hand_joint"/>
         <joint name="panda2_finger_joint1"/>
         <joint name="panda2_finger_joint2"/>
+        <joint name="rod_2_joint"/>
     </group>
     <group name="panda1_hand">
         <joint name="panda1_hand_joint"/>
         <joint name="panda1_finger_joint1"/>
         <joint name="panda1_finger_joint2"/>
+        <joint name="rod_1_joint"/>
     </group>
     <group name="panda3_hand">
         <joint name="panda3_hand_joint"/>
         <joint name="panda3_finger_joint1"/>
         <joint name="panda3_finger_joint2"/>
+        <joint name="rod_3_joint"/>
     </group>
     <group name="panda_multi_arm">
         <group name="panda1_arm"/>
