@@ -10,7 +10,6 @@
     <!--CHAINS: When a chain is specified, all the links along the chain (including endpoints) are included in the group. Additionally, all the joints that are parents to included links are also included. This means that joints along the chain and the parent joint of the base link are included in the group-->
     <!--SUBGROUPS: Groups can also be formed by referencing to already defined group names-->
     <group name="panda0_arm">
-        <joint name="panda0_joint_base"/>
         <joint name="panda0_joint1"/>
         <joint name="panda0_joint2"/>
         <joint name="panda0_joint3"/>
@@ -21,7 +20,6 @@
         <joint name="panda0_joint8"/>
     </group>
     <group name="panda1_arm">
-        <joint name="panda1_joint_base"/>
         <joint name="panda1_joint1"/>
         <joint name="panda1_joint2"/>
         <joint name="panda1_joint3"/>
@@ -32,7 +30,6 @@
         <joint name="panda1_joint8"/>
     </group>
     <group name="panda2_arm">
-        <joint name="panda2_joint_base"/>
         <joint name="panda2_joint1"/>
         <joint name="panda2_joint2"/>
         <joint name="panda2_joint3"/>
@@ -43,7 +40,6 @@
         <joint name="panda2_joint8"/>
     </group>
     <group name="panda3_arm">
-        <joint name="panda3_joint_base"/>
         <joint name="panda3_joint1"/>
         <joint name="panda3_joint2"/>
         <joint name="panda3_joint3"/>
@@ -443,6 +439,66 @@
         <joint name="panda3_joint5" value="0"/>
         <joint name="panda3_joint6" value="2"/>
         <joint name="panda3_joint7" value="0.3"/>
+    </group_state>
+    <group_state name="cross_throw" group="panda_multi_arm">
+        <joint name="panda0_joint1" value="-0.3666"/>
+        <joint name="panda0_joint2" value="-0.1799"/>
+        <joint name="panda0_joint3" value="0.1419"/>
+        <joint name="panda0_joint4" value="-1.4483"/>
+        <joint name="panda0_joint5" value="0"/>
+        <joint name="panda0_joint6" value="2.6061"/>
+        <joint name="panda0_joint7" value="0"/>
+        <joint name="panda1_joint1" value="-0.2956"/>
+        <joint name="panda1_joint2" value="0.59"/>
+        <joint name="panda1_joint3" value="0"/>
+        <joint name="panda1_joint4" value="-1.1542"/>
+        <joint name="panda1_joint5" value="0"/>
+        <joint name="panda1_joint6" value="2.5446"/>
+        <joint name="panda1_joint7" value="0"/>
+        <joint name="panda2_joint1" value="0"/>
+        <joint name="panda2_joint2" value="0.4965"/>
+        <joint name="panda2_joint3" value="-0.6386"/>
+        <joint name="panda2_joint4" value="-0.8724"/>
+        <joint name="panda2_joint5" value="0"/>
+        <joint name="panda2_joint6" value="2.3368"/>
+        <joint name="panda2_joint7" value="2.0458"/>
+        <joint name="panda3_joint1" value="0"/>
+        <joint name="panda3_joint2" value="0.4533"/>
+        <joint name="panda3_joint3" value="-0.2365"/>
+        <joint name="panda3_joint4" value="-1.4728"/>
+        <joint name="panda3_joint5" value="-0.1183"/>
+        <joint name="panda3_joint6" value="2.8292"/>
+        <joint name="panda3_joint7" value="-1.3363"/>
+    </group_state>
+    <group_state name="mess" group="panda_multi_arm">
+        <joint name="panda0_joint1" value="-0.3666"/>
+        <joint name="panda0_joint2" value="-0.1799"/>
+        <joint name="panda0_joint3" value="0.1419"/>
+        <joint name="panda0_joint4" value="-1.4483"/>
+        <joint name="panda0_joint5" value="0"/>
+        <joint name="panda0_joint6" value="2.6061"/>
+        <joint name="panda0_joint7" value="0"/>
+        <joint name="panda1_joint1" value="-0.2956"/>
+        <joint name="panda1_joint2" value="0.4029"/>
+        <joint name="panda1_joint3" value="0.8869"/>
+        <joint name="panda1_joint4" value="-1.6443"/>
+        <joint name="panda1_joint5" value="-1.0525"/>
+        <joint name="panda1_joint6" value="2.3753"/>
+        <joint name="panda1_joint7" value="-0.2247"/>
+        <joint name="panda2_joint1" value="-0.1537"/>
+        <joint name="panda2_joint2" value="0.3382"/>
+        <joint name="panda2_joint3" value="0.201"/>
+        <joint name="panda2_joint4" value="-0.8724"/>
+        <joint name="panda2_joint5" value="2.578"/>
+        <joint name="panda2_joint6" value="3.5063"/>
+        <joint name="panda2_joint7" value="2.0458"/>
+        <joint name="panda3_joint1" value="0"/>
+        <joint name="panda3_joint2" value="0.6116"/>
+        <joint name="panda3_joint3" value="-0.2365"/>
+        <joint name="panda3_joint4" value="-2.0609"/>
+        <joint name="panda3_joint5" value="-0.1183"/>
+        <joint name="panda3_joint6" value="2.8292"/>
+        <joint name="panda3_joint7" value="-1.3363"/>
     </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="panda0_hand" parent_link="panda0_link8" group="panda0_hand"/>
