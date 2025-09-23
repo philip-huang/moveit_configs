@@ -75,7 +75,7 @@
         <joint name="panda1_joint1" value="0"/>
         <joint name="panda1_joint2" value="0"/>
         <joint name="panda1_joint3" value="0"/>
-        <joint name="panda1_joint4" value="0"/>
+        <joint name="panda1_joint4" value="-0.0761"/>
         <joint name="panda1_joint5" value="0"/>
         <joint name="panda1_joint6" value="0"/>
         <joint name="panda1_joint7" value="0"/>
@@ -121,7 +121,7 @@
         <joint name="panda1_joint1" value="0.1"/>
         <joint name="panda1_joint2" value="-0.4882"/>
         <joint name="panda1_joint3" value="2.8973"/>
-        <joint name="panda1_joint4" value="0.0175"/>
+        <joint name="panda1_joint4" value="-0.0761"/>
         <joint name="panda1_joint5" value="0"/>
         <joint name="panda1_joint6" value="1.5485"/>
         <joint name="panda1_joint7" value="0"/>
@@ -259,7 +259,7 @@
         <joint name="panda1_joint1" value="0.1"/>
         <joint name="panda1_joint2" value="-0.4"/>
         <joint name="panda1_joint3" value="2.8973"/>
-        <joint name="panda1_joint4" value="0.0175"/>
+        <joint name="panda1_joint4" value="-0.0761"/>
         <joint name="panda1_joint5" value="0"/>
         <joint name="panda1_joint6" value="1.5485"/>
         <joint name="panda1_joint7" value="0"/>
