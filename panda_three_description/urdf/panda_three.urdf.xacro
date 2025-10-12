@@ -4,8 +4,9 @@
   <xacro:arg name="arm_id_1" default="panda1" />
   <xacro:arg name="arm_id_2" default="panda2" />
 
-  <xacro:include filename="$(find moveit_resources_panda_description)/urdf/panda_arm.xacro"/>
-  <xacro:include filename="$(find moveit_resources_panda_description)/urdf/hand.xacro"/>
+  <!-- <xacro:include filename="$(find moveit_resources_panda_description)/urdf/panda_arm.xacro"/>
+  <xacro:include filename="$(find moveit_resources_panda_description)/urdf/hand.xacro"/> -->
+  <xacro:include filename="$(find panda_spherized_description)/panda_spherized.urdf.xacro"/>
   <xacro:include filename="bookshelf.xacro"/>
 
   <!-- box shaped table as base for the 2 Pandas -->
@@ -57,15 +58,18 @@
 
   <!-- Organize the arms in two rows, perpendicular to each other and facing outwards. -->
   <!-- panda_0 with gripper -->
-  <xacro:panda_arm arm_id="$(arg arm_id_0)" connected_to="base"  xyz="-0.4 0 0.1" rpy="0 0 1.5708"/>
-  <xacro:hand ns="$(arg arm_id_0)" rpy="0 0 0" connected_to="$(arg arm_id_0)_link8"/>
+  <!-- <xacro:panda_arm arm_id="$(arg arm_id_0)" connected_to="base"  xyz="-0.4 0 0.1" rpy="0 0 1.5708"/>
+  <xacro:hand ns="$(arg arm_id_0)" rpy="0 0 0" connected_to="$(arg arm_id_0)_link8"/> -->
+  <xacro:panda_arm_hand arm_id="$(arg arm_id_0)" connected_to="base"  xyz="-0.4 0 0.1" rpy="0 0 1.5708"/>
 
   <!-- panda_1 with gripper -->
-  <xacro:panda_arm arm_id="$(arg arm_id_1)" connected_to="base"  xyz="0 0.0 0.1" rpy="0 0 1.5708"/>
-  <xacro:hand ns="$(arg arm_id_1)" rpy="0 0 0" connected_to="$(arg arm_id_1)_link8"/>
+  <!-- <xacro:panda_arm arm_id="$(arg arm_id_1)" connected_to="base"  xyz="0 0.0 0.1" rpy="0 0 1.5708"/>
+  <xacro:hand ns="$(arg arm_id_1)" rpy="0 0 0" connected_to="$(arg arm_id_1)_link8"/> -->
+  <xacro:panda_arm_hand arm_id="$(arg arm_id_1)" connected_to="base"  xyz="0 0.0 0.1" rpy="0 0 1.5708"/>
 
   <!-- panda_2 with gripper -->
-  <xacro:panda_arm arm_id="$(arg arm_id_2)" connected_to="base"  xyz="0.4 0 0.1" rpy="0 0 1.5708"/>
-  <xacro:hand ns="$(arg arm_id_2)" rpy="0 0 0" connected_to="$(arg arm_id_2)_link8"/>
+  <!-- <xacro:panda_arm arm_id="$(arg arm_id_2)" connected_to="base"  xyz="0.4 0 0.1" rpy="0 0 1.5708"/>
+  <xacro:hand ns="$(arg arm_id_2)" rpy="0 0 0" connected_to="$(arg arm_id_2)_link8"/> -->
+  <xacro:panda_arm_hand arm_id="$(arg arm_id_2)" connected_to="base"  xyz="0.4 0 0.1" rpy="0 0 1.5708"/>
 
 </robot>
